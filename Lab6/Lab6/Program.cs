@@ -32,3 +32,6 @@ namespace Lab6
         }
     }
 }
+
+
+//one input and two outputs
