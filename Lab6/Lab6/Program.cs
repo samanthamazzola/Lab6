@@ -6,29 +6,36 @@ namespace Lab6
     {
         public static void Main(string[] args)
         {
-            int sidesCount = 6;
-            random = new Random();
+            int numOfSides;
+            string userAnswer;
 
-            Rollingdie dice1 = new Rollingdie(10);
-            Console.WriteLine(die1.GetSides());
-            Rollingdie dice2 = new Rollingdie();
-            Console.WriteLine(die2.GetSides());
-           
+            Console.WriteLine("Welcome to the Grand Circus Casino! Roll the dice? (y/n)");
+            // whether or not it will take it as a value. that the user input is y/n
+            userAnswer = Console.ReadLine(); //takes the user input of y/n
 
-        }
-        public static int Rollingdie(int sidesCount)
-        {
-            sidesCount = GetSides();
-            random = new Random();
-
-        }
-        public static int GetSides();
+            if (userAnswer.ToLower() == "y") //if the userAnswer.ToLower method is equal to y
             {
-                return sidesCount;
+                do
+                {
+                    // prompt asking for input
+                    Console.WriteLine("How many sides should each dice have?");
+                    // take in the value the user input
+                    numOfSides = int.Parse(Console.ReadLine());
+                    // to make sure it won't break add exception if people don't put numbers
+                    // dice value can only have the max number of sizes
+                    Random rollDice = new Random(); // random class 
+                    Console.WriteLine("Roll: ");
+                    Console.WriteLine(rollDice.Next(1, numOfSides));//(min, max)
+                    Console.WriteLine(rollDice.Next(1, numOfSides));
+
+                    // validation
+                    Console.WriteLine("Roll again? (y/n)");
+                    userAnswer = Console.ReadLine(); 
+                }
+
+                while (userAnswer == "y");
             }
-        public int Roll()
-        {
-            return random.Next(1, sidesCount + 1);
+ 
         }
     }
 }
