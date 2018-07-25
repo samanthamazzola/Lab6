@@ -24,6 +24,7 @@ namespace Lab6
                     // to make sure it won't break add exception if people don't put numbers
                     // dice value can only have the max number of sizes
                     Random rollDice = new Random(); // random class 
+                    //unsure if my nuget package is added correctly Troschuetz.Random.IGenerator
                     Console.WriteLine("Roll: ");
                     Console.WriteLine(rollDice.Next(1, numOfSides));//(min, max)
                     Console.WriteLine(rollDice.Next(1, numOfSides));
