@@ -1,0 +1,2 @@
+/Users/samanthamazzola/Projects/TestCollectionsJuly201/TestCollectionsJuly201/obj/x86/Debug/TestCollectionsJuly2018.csprojResolveAssemblyReference.cache
+/Users/samanthamazzola/Projects/TestCollectionsJuly201/TestCollectionsJuly201/obj/x86/Debug/TestCollectionsJuly2018.csproj.CoreCompileInputs.cache
